@@ -1,0 +1,5 @@
+dump/
+config/*
+!config/config-sample.sh
+.DS_Store
+*.*~

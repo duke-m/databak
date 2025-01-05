@@ -1,0 +1,12 @@
+services:
+  postgres:
+    container_name: ${name}
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: ${temp_pg_password}
+    ports:
+      - ${port}:5432
+    command:
+      - "postgres"
+      - "-c"
+      - "wal_level=logical"
